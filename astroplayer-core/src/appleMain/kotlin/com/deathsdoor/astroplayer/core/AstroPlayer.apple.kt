@@ -393,5 +393,7 @@ actual open class AstroPlayer actual constructor(nativeMediaPlayer: NativeMediaP
     internal actual fun deregisterNativeListenerForAstro() {
     }
 
-
+    actual companion object {
+        // Implement platform-specific functionality if needed
+    }
 }
