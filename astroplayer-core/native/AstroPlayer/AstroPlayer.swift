@@ -93,29 +93,29 @@ import AVFoundation
         debugPrint(#function)
     }
 
-    @objc public func decreaseVolumeBy(offset: Float) {
+    @objc public func decreaseVolumeBy(_ offset: Float) {
         debugPrint(#function)
     }
 
-    @objc public func increaseVolumeBy(offset: Float) {
+    @objc public func increaseVolumeBy(_ offset: Float) {
         debugPrint(#function)
     }
 
     // MARK: -
 
-    @objc public func addMediaItem(item: AstroMediaItem) {
+    @objc public func addMediaItem(_ item: AstroMediaItem) {
         debugPrint(#function)
     }
 
-    @objc public func addMediaItem(index: Int32, item: AstroMediaItem) {
+    @objc public func addMediaItem(_ index: Int32, item: AstroMediaItem) {
         debugPrint(#function)
     }
 
-    @objc public func addMediaItems(items: [AstroMediaItem]) {
+    @objc public func addMediaItems(_ items: [AstroMediaItem]) {
         debugPrint(#function)
     }
 
-    @objc public func addMediaItems(index: Int32, items: [AstroMediaItem]) {
+    @objc public func addMediaItems(_ index: Int32, items: [AstroMediaItem]) {
         debugPrint(#function)
     }
 
@@ -128,32 +128,32 @@ import AVFoundation
         debugPrint(#function)
     }
 
-    @objc public func mapMediaItems(transform: @escaping (AstroMediaItem) -> Any?) -> [Any] {
+    @objc public func mapMediaItems(_ transform: @escaping (AstroMediaItem) -> Any?) -> [Any] {
         debugPrint(#function)
         return []
     }
 
-    @objc public func moveMediaItem(currentIndex: Int32, newIndex: Int32) {
+    @objc public func moveMediaItem(_ currentIndex: Int32, newIndex: Int32) {
         debugPrint(#function)
     }
 
-    @objc public func moveMediaItems(fromIndex: Int32, toIndex: Int32, newIndex: Int32) {
+    @objc public func moveMediaItems(_ fromIndex: Int32, toIndex: Int32, newIndex: Int32) {
         debugPrint(#function)
     }
 
-    @objc public func removeMediaItem(index: Int32) {
+    @objc public func removeMediaItem(_ index: Int32) {
         debugPrint(#function)
     }
 
-    @objc public func removeMediaItems(fromIndex: Int32, toIndex: Int32) {
+    @objc public func removeMediaItems(_ fromIndex: Int32, toIndex: Int32) {
         debugPrint(#function)
     }
 
-    @objc public func replaceMediaItem(index: Int32, mediaItem: AstroMediaItem) {
+    @objc public func replaceMediaItem(_ index: Int32, mediaItem: AstroMediaItem) {
         debugPrint(#function)
     }
 
-    @objc public func replaceMediaItems(fromIndex: Int32, toIndex: Int32, mediaItems: [AstroMediaItem]) {
+    @objc public func replaceMediaItems(_ fromIndex: Int32, toIndex: Int32, mediaItems: [AstroMediaItem]) {
         debugPrint(#function)
     }
 }
