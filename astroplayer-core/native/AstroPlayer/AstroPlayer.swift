@@ -15,31 +15,31 @@ import AVFoundation
 @objc public class iOSAstroPlayer : NSObject {
     let player = AVQueuePlayer(items: [])
 
-    @objc var mediaItemCount: Int32 {
+    @objc public var mediaItemCount: Int32 {
         Int32(player.items().count)
     }
 
-    @objc var contentDuration: Int64 = 0
-    @objc var currentEqualizerValues: EqualizerValues? = nil
-    @objc var currentMediaItem: AstroMediaItem? = nil
-    @objc var currentMediaItemIndex: Int32 = 0
-    @objc var currentPosition: Int64 = 0
+    @objc public var contentDuration: Int64 = 0
+    @objc public var currentEqualizerValues: EqualizerValues? = nil
+    @objc public var currentMediaItem: AstroMediaItem? = nil
+    @objc public var currentMediaItemIndex: Int32 = 0
+    @objc public var currentPosition: Int64 = 0
 
-    @objc var isEqualizerEnabled: Bool = false
-    @objc var isMuted: Bool = false
-    @objc var isPaused: Bool = false
-    @objc var isPlaying: Bool = false
-    @objc var isSmartEqualizerEnabled: Bool = false
+    @objc public var isEqualizerEnabled: Bool = false
+    @objc public var isMuted: Bool = false
+    @objc public var isPaused: Bool = false
+    @objc public var isPlaying: Bool = false
+    @objc public var isSmartEqualizerEnabled: Bool = false
 
-    @objc var volume: Float = 0.0
+    @objc public var volume: Float = 0.0
 
-    @objc var playBackSpeed: Float = 0.0
-    @objc var repeatMode: RepeatMode = .off
+    @objc public var playBackSpeed: Float = 0.0
+    @objc public var repeatMode: RepeatMode = .off
 
-    @objc var seekBackIncrement: Int64 = 0
-    @objc var seekForwardIncrement: Int64 = 0
-    @objc var shuffleModeEnabled: Bool = false
-    @objc var smartEqualizerPicker: ((String) -> EqualizerValues)?
+    @objc public var seekBackIncrement: Int64 = 0
+    @objc public var seekForwardIncrement: Int64 = 0
+    @objc public var shuffleModeEnabled: Bool = false
+    @objc public var smartEqualizerPicker: ((String) -> EqualizerValues)?
 
     // MARK: -
 
