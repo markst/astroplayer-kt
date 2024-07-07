@@ -9,6 +9,14 @@ plugins {
 
     id("maven-publish")
     id("signing")
+    id("io.github.ttypic.swiftklib")
+}
+
+swiftklib {
+    create("AstroPlayer") {
+        path = file("native/AstroPlayer")
+        packageName("com.deathsdoor.astroplayerswift")
+    }
 }
 
 kotlin {
@@ -46,6 +54,13 @@ kotlin {
         iosTarget.binaries.framework {
             baseName = "astroplayer-core"
             isStatic = true
+        }
+        iosTarget.compilations {
+            val main by getting {
+                cinterops {
+                    create("AstroPlayer")
+                }
+            }
         }
     }
 
