@@ -65,8 +65,8 @@ kotlin {
             implementation(compose.components.resources)
             implementation(compose.components.uiToolingPreview)
 
-            implementation("com.deathsdooor.astroplayer:astroplayer-core:0.1.0")
-            implementation("com.deathsdooor.astroplayer:astroplayer-ui:0.1.0")
+            // implementation("com.deathsdooor.astroplayer:astroplayer-core:0.1.0")
+            // implementation("com.deathsdooor.astroplayer:astroplayer-ui:0.1.0")
         }
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)
